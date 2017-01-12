@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Sponte Cadastros</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Opções</string>
+    <string name="font_family">Roboto</string>
+    <string name="forgot_pass"><a href='#'>Dúvidas no acesso?</a></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="novoAluno">Novo Aluno</string>
+    <string name="lista">Alunos Cadastrados</string>
+    <string name="logoff">Sair</string>
+    <string name="sobre">Sobre</string>
+    <string name="desenvolvidopor">Desenvolvido por:</string>
+    <string name="ano">2017</string>
+    <string name="title_activity_lista__alunos">Alunos Cadastrados</string>
+    <string name="title_activity_aluno">Novo Aluno</string>
+    <string name="title_activity_teste">teste</string>
+</resources>

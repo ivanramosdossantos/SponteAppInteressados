@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_aluno"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sponte.appsponte.Formulario_AlunoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome do Aluno:"/>
+            <EditText
+                android:id="@+id/edtnome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#626262"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone celular:"/>
+
+            <EditText
+                android:id="@+id/edtcelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="#626262"
+                android:hint="(  )____-_____"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail:"/>
+            <EditText
+                android:id="@+id/edtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="#626262"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexo:"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/radio_mas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masc."
+                    android:buttonTint="#4E534F"
+                    android:textColor="#4E534F"
+                    android:layout_marginLeft="70sp"
+                    android:checked="true" />
+                <RadioButton android:id="@+id/radio_fem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fem."
+                    android:layout_gravity="center"
+                    android:buttonTint="#4E534F"
+                    android:textColor="#4E534F"
+                    android:layout_marginLeft="60sp"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mídia"
+                android:layout_marginTop="10dp"/>
+            <Spinner
+                android:id="@+id/spMidia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campanha"/>
+            <Spinner
+                android:id="@+id/spCampanha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observação:"/>
+            <EditText
+                android:id="@+id/Obs"
+                android:scrollbars="vertical"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                android:background="#007fb8"
+                android:textColor="#fff"
+                android:id="@+id/btnSalvar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/btnSalvar"
+                android:layout_below="@+id/txtSenha"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10sp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
